@@ -8,9 +8,9 @@ function convertToRoman(num) {
       5:['V', 5], 
       6:['I', 1]
     };
-    let result = "";
+     let result = "";
 
-    for (let i = 0; i < obj.length; i++) {
+    for (let i = 0; i < Object.keys(obj).length; i++) {
         let roman = obj[i][0];
         let value = obj[i][1];
 
