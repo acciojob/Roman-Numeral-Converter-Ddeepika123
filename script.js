@@ -10,9 +10,9 @@ function convertToRoman(num) {
     };
   let result = "";
 
-    for (let i = 0; i < symbols.length; i++) {
-        let roman = symbols[i][0];
-        let value = symbols[i][1];
+    for (let i = 0; i < obj.length; i++) {
+        let roman = obj[i][0];
+        let value = obj[i][1];
 
         while (num >= value) {
             result += roman;
