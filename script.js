@@ -10,17 +10,17 @@ function convertToRoman(num) {
     };
   let result = "";
 
-    for (let i = 0; i < obj.length; i++) {
-        while (num >= obj[i][1]) {
-            result += obj[i][0];
-            num -= obj[i][1];
+    for (let i = 0; i < symbols.length; i++) {
+        let roman = symbols[i][0];
+        let value = symbols[i][1];
+
+        while (num >= value) {
+            result += roman;
+            num -= value;
         }
     }
 
     return result;
-
-  //your code here
-
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
 
